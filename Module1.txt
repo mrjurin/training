@@ -1,0 +1,132 @@
+﻿Module Module1
+    'Standard
+    'Pascal Style:CapitalCapital()
+    'Constant Style:ABC
+    'CamelCase Style: lowercaseCapital()
+    'Verb/Expressive
+
+
+    'Dynamic Language
+    'Strongly-Typed Language
+
+    Dim camelCase As String = "" 'Type Safe code
+
+
+
+    Sub Main()
+        Console.WriteLine("Hello wolrd")
+
+        Dim dogBiasa = New Dog()
+
+        Console.WriteLine(dogBiasa.GetHabitat())
+
+        Dim sl = New Seal()
+
+        Console.WriteLine(sl.GetHabitat())
+
+        Dim wl = New Wolf()
+
+        Console.WriteLine(wl.GetHabitat())
+
+
+        Console.ReadKey()
+    End Sub
+
+End Module
+
+
+'Abstraction Class
+Public MustInherit Class GeneralDog
+    Public Property Name As String
+    Public Property Color As String
+    Public Property Age As Integer 'Read/Write Property
+
+
+    Private _Habitat As String
+
+    'field
+    Private _VolumeOfBark As Decimal
+
+    Public Sub New()
+        Me._Habitat = "Darat"
+    End Sub
+
+    'read only
+    Public ReadOnly Property GetVolumeOfBarks() As Integer
+        Get
+            Return Me._VolumeOfBark
+        End Get
+    End Property
+
+    'Method ada 2 : Void/ReturnType
+    'Void method
+    Public Sub Bark()
+        Console.WriteLine("Barking..")
+
+        Me._VolumeOfBark = Me.calculateVolumeOfBark(20.4)
+
+        Console.WriteLine("Please get the volume")
+    End Sub
+
+    'Access modifier
+    Private Function calculateVolumeOfBark(ByVal Val As Decimal) As Decimal
+
+        Dim toInt = Math.Round(Val, 1)
+
+        Return toInt
+    End Function
+
+    'Can change the behaviour on the specific class
+    Public Overridable ReadOnly Property GetHabitat() As String
+        Get
+            Return Me._Habitat
+        End Get
+    End Property
+End Class
+
+
+'Concrete class
+'Blueprint=> Templating=> object
+Public Class Dog
+    Inherits GeneralDog
+End Class
+
+Public Class Seal
+    Inherits Dog 'inheritance
+
+    Private _Habitat As String
+    'Constructor
+    '__construct(){}
+    'Seal(){}
+    Sub New()
+        Me._Habitat = "Ocean"
+    End Sub
+
+    'Overriding
+    Public Overrides ReadOnly Property GetHabitat As String
+        Get
+            Return Me._Habitat
+        End Get
+    End Property
+
+End Class
+
+Public Class Wolf
+    Inherits Dog 'inheritance
+
+    Private _Habitat As String
+    'Constructor
+    '__construct(){}
+    'Seal(){}
+    Sub New()
+        Me._Habitat = "Iceland"
+    End Sub
+
+    'Overriding
+    Public Overrides ReadOnly Property GetHabitat As String
+        Get
+            Return Me._Habitat
+        End Get
+    End Property
+
+End Class

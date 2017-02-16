@@ -1,0 +1,10 @@
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\bin\Debug\TrainingOop.exe.config
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\bin\Debug\TrainingOop.exe
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\bin\Debug\TrainingOop.pdb
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\bin\Debug\TrainingOop.xml
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\obj\Debug\TrainingOop.vbprojResolveAssemblyReference.cache
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\obj\Debug\TrainingOop.Resources.resources
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\obj\Debug\TrainingOop.vbproj.GenerateResource.Cache
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\obj\Debug\TrainingOop.exe
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\obj\Debug\TrainingOop.xml
+C:\MySoftwareDevelopment\TrainingOop\TrainingOop\obj\Debug\TrainingOop.pdb
